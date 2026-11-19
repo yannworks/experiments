@@ -2,7 +2,7 @@ import type { MouseEvent } from 'react'
 import { experiments, formatDate } from './experiments'
 import { ThemeToggle } from './ThemeToggle'
 
-const REPO = 'https://github.com/ultrararebinary/experiments'
+const REPO = 'https://github.com/yannworks/experiments'
 const X = 'https://x.com/yannworks'
 
 export function Home() {

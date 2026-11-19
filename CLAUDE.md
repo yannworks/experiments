@@ -1,6 +1,6 @@
 # Working in this repository
 
-This is Yann's public lab of copy-paste UI components (GitHub: `ultrararebinary/experiments`, MIT). Read `docs/decisions.md` before changing anything: it records every decision made with Yann, and it wins over your own preferences. A decision changes only when Yann asks, with the date and the reason added to that file.
+This is Yann's public lab of copy-paste UI components (GitHub: `yannworks/experiments`, MIT). Read `docs/decisions.md` before changing anything: it records every decision made with Yann, and it wins over your own preferences. A decision changes only when Yann asks, with the date and the reason added to that file.
 
 Talk to Yann in French. Code, comments and everything published in the repo stay in English.
 

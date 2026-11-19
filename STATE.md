@@ -1,10 +1,10 @@
 # State
 
-Last updated: 2026-11-09.
+Last updated: 2026-11-19.
 
 ## Goal
 
-A public lab of small React UI components that anyone can copy, published at https://ultrararebinary.github.io/experiments/. Decisions are in `docs/decisions.md`; repo rules in `CLAUDE.md`.
+A public lab of small React UI components that anyone can copy, published at https://yannworks.github.io/experiments/. Decisions are in `docs/decisions.md`; repo rules in `CLAUDE.md`.
 
 ## What exists
 
@@ -45,7 +45,7 @@ A public lab of small React UI components that anyone can copy, published at htt
 
 ## Published (2026-10-29)
 
-- Repo https://github.com/ultrararebinary/experiments created and pushed, Pages set to the workflow source.
+- Repo https://github.com/yannworks/experiments created and pushed, Pages set to the workflow source.
 - First run of the deploy workflow passed (build and deploy).
 - Live site checked in the built-in browser: home, live button press (peak 0.88, overshoot about -0.10), hover lift, card click, direct reload of `#/glossy-button`, copy button (clipboard matched the file), zero console errors.
 - Workflow annotation to watch: GitHub runs the v4/v5 actions on Node 24 because Node 20 is deprecated. It works today; bump the action versions when new majors are out.
@@ -120,6 +120,12 @@ A full review of the home page, the page change and the experiment page template
 - `og.png` regenerated (see above), with `og:image:width`, `og:image:height` and `og:image:alt`.
 
 Checked: `npm run build` passes with no size warning. Dev server and production build under `/experiments/`, both themes: all eight pages opened and closed, zero console errors or warnings. Copy: clipboard matched the code shown; forced failure showed "Couldn't copy" with no uncaught error. Tabs by keyboard: Right selects and focuses the next file and wraps, Tab goes to Copy then into the code. Placeholder held 525 px while the code arrived (slowed on purpose); a blocked load showed the message. Direct reload of `#/pull-tab`, unknown route. Snooze preview: "Saving" then "Saved" then back, with no page change. Page transition re-measured: same 300 ms path; six interrupted back and forward sequences leave no stuck name and the next transition plays. Reduced motion (emulated in Chrome): fades only. With a 4x slower CPU on a 390 px phone view: first paint 600 ms (was 632), blocking time 89 ms (was 142), click to first transition frame 134 to 155 ms (was 172 to 245). Captures at 320, 390 and 1440 px in both themes, focus rings zoomed. README pictures redone for Shoji Bento, Snooze Button, Glossy Button and the hero; the others were restored.
+
+## GitHub account renamed (2026-11-19)
+
+- Yann renamed the GitHub account from `ultrararebinary` to `yannworks`. GitHub redirects the old repo URLs, but the old site address now answers 404 and the new one, https://yannworks.github.io/experiments/, answers 200.
+- Every address in the repo now uses the new name: `index.html` (`og:url`, `og:image`), the GitHub link on the home page, the Gem Clip demo, `scripts/readme.mjs`, the README links, `CLAUDE.md`, `LICENSE` and `docs/decisions.md`. `docs/kickoff-prompt.md` keeps the old name on purpose: it is the original prompt.
+- Checked locally: `npm run build` passes; the production build under `/experiments/` has the new `og:url` and `og:image`, the home GitHub link points to `yannworks/experiments`, the Gem Clip page shows the new clone command, zero console errors. No README picture changed.
 
 ## Published (2026-11-09)
 

@@ -6,7 +6,7 @@ Décidé avec Yann le 29 octobre 2026, pendant une session `/grill-me` dans Clau
 
 - Labo à copier-coller, dans l'esprit de shadcn/ui : chaque expérience est un dossier lisible qu'on copie dans son projet. Pas de paquet npm.
 - Uniquement des composants d'interface web pour l'instant.
-- Dépôt GitHub public `ultrararebinary/experiments`, licence MIT.
+- Dépôt GitHub public `yannworks/experiments`, licence MIT (compte nommé `ultrararebinary` jusqu'au 19 novembre 2026).
 - Code local : `/Users/yann/AIOS/projects/experiments`, avec son propre git.
 - But secondaire : réutiliser ces composants dans le futur portfolio de Yann (Next.js), qui n'est pas encore lancé.
 
@@ -24,7 +24,7 @@ Décidé avec Yann le 29 octobre 2026, pendant une session `/grill-me` dans Clau
 ## Mise en ligne
 
 - GitHub Pages, déployé par une GitHub Action à chaque push sur `main`.
-- Adresse : `https://ultrararebinary.github.io/experiments/`.
+- Adresse : `https://yannworks.github.io/experiments/` (`https://ultrararebinary.github.io/experiments/` jusqu'au 19 novembre 2026).
 - Rien ne part en ligne sans un push.
 
 ## Contenu d'une expérience
@@ -188,3 +188,10 @@ Demandé par Yann : une nouvelle catégorie de composant, choisie par Claude, qu
 - Clavier : la ligne s'ouvre ou se ferme d'un coup, sans animation. Mouvement réduit : la hauteur change d'un coup et la réponse apparaît en fondu de 150 ms ; une languette tirée suit encore le pointeur, puis le tiroir va directement à sa place.
 - Raison du nom : une pull tab est la languette qu'on tire, et c'est le geste qui distingue ce composant.
 - Rejetés : Fold, Split, un geste de tirer au doigt, une ombre sous le tiroir (une arête nette de 1 px sous la question suffit).
+
+## Changement du 19 novembre 2026 : nouveau nom du compte GitHub
+
+Demandé par Yann. Raison : il a renommé son compte GitHub de `ultrararebinary` en `yannworks`, le même nom que sur X. GitHub redirige l'ancien dépôt, mais pas l'ancienne adresse du site, qui renvoie une erreur 404.
+
+- Le dépôt devient `yannworks/experiments` et le site `https://yannworks.github.io/experiments/`. Toutes les adresses du dépôt (README, `index.html`, lien GitHub de l'accueil, démo de Gem Clip, `scripts/readme.mjs`) et la ligne de copyright de `LICENSE` suivent ce nom.
+- `docs/kickoff-prompt.md` garde l'ancien nom : c'est le prompt d'origine, conservé tel quel.
