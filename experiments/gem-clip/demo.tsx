@@ -24,7 +24,7 @@ export default function Demo() {
       </section>
       <section className="demo__section">
         <h3>Medium</h3>
-        <GemClip value="git clone https://github.com/ultrararebinary/experiments.git" />
+        <GemClip value="git clone https://github.com/yannworks/experiments.git" />
       </section>
       <section className="demo__section">
         <h3>Large</h3>

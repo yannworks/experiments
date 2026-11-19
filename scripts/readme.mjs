@@ -12,7 +12,7 @@ import { setTimeout as sleep } from 'node:timers/promises'
 const ROOT = fileURLToPath(new URL('..', import.meta.url))
 const SITE_PORT = 4320
 const CDP_PORT = 9333
-const LIVE = 'https://ultrararebinary.github.io/experiments/'
+const LIVE = 'https://yannworks.github.io/experiments/'
 const CHROME =
   process.env.CHROME_PATH ?? '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 
