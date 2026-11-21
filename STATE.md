@@ -127,11 +127,11 @@ Checked: `npm run build` passes with no size warning. Dev server and production 
 - Every address in the repo now uses the new name: `index.html` (`og:url`, `og:image`), the GitHub link on the home page, the Gem Clip demo, `scripts/readme.mjs`, the README links, `CLAUDE.md`, `LICENSE` and `docs/decisions.md`. `docs/kickoff-prompt.md` keeps the old name on purpose: it is the original prompt.
 - Checked locally: `npm run build` passes; the production build under `/experiments/` has the new `og:url` and `og:image`, the home GitHub link points to `yannworks/experiments`, the Gem Clip page shows the new clone command, zero console errors. No README picture changed.
 
-## Contrast fix (2026-11-21, branch `fix/contrast`, not pushed)
+## Contrast fix (2026-11-21, published)
 
 - Gem Clip's muted colour 55% -> 65% (the "Copied" note reaches 4.9:1 at worst, light theme) and Shoji Bento's lines 18% -> 52%, hover 55% -> 80% (3.3:1 at worst for the lines you drag). Found while bringing these components into Yann's personal site; reasons in `docs/decisions.md`.
 - Checked: `npm run build` passes; both components in both themes on the dev server (rest, hover, keyboard focus, "Copied"), zero console errors; `npm run readme` re-run, only the Gem Clip and Shoji Bento pictures kept.
-- Waiting for Yann's go-ahead to push and merge to `main`.
+- Published on Yann's go-ahead: `main` fast-forwarded to `6342f05`, deploy passed, the live site serves the new colours (lines 52%, note 65%) with zero console errors. Yann's personal site bundles these components from this commit.
 
 ## Published (2026-11-09)
 
