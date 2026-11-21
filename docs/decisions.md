@@ -195,3 +195,11 @@ Demandé par Yann. Raison : il a renommé son compte GitHub de `ultrararebinary`
 
 - Le dépôt devient `yannworks/experiments` et le site `https://yannworks.github.io/experiments/`. Toutes les adresses du dépôt (README, `index.html`, lien GitHub de l'accueil, démo de Gem Clip, `scripts/readme.mjs`) et la ligne de copyright de `LICENSE` suivent ce nom.
 - `docs/kickoff-prompt.md` garde l'ancien nom : c'est le prompt d'origine, conservé tel quel.
+
+## Changement du 21 novembre 2026 : contraste de Gem Clip et de Shoji Bento
+
+Demandé par Yann, après la mesure faite pour la vitrine de son site personnel (yannworks.github.io), où ces composants sont repris tels quels. Raison : trois couleurs n'atteignaient pas les seuils WCAG 2.2 AA, sur ce site comme ici.
+
+- Gem Clip : `--gem-clip-muted` passe de 55 % à 65 % de `--gem-clip-fg`. La note « Copied » (texte de 12 px) avait 3,6 à 3,7:1 en thème clair ; elle a maintenant 4,9:1 au pire (sur `#f6f5f2`), 7:1 en sombre. Le trombone au repos fonce d'autant ; il passe toujours à la couleur pleine au survol et pendant la prise.
+- Shoji Bento : `--shoji-line` passe de 18 % à 52 % de `--shoji-fg`. Les lignes sont les contrôles qu'on tire : elles avaient 1,4:1 (clair) et 1,6:1 (sombre), elles ont au moins 3,3:1 et 4,9:1. Le survol passe de 55 % à 80 % pour rester visible. Les lignes restent d'un pixel.
+- Gardé : la pilule de Snooze Button en thème sombre (1,4:1 sur le fond), car c'est son libellé (12,8:1) qui identifie le bouton.
